@@ -1,0 +1,8 @@
+{
+  "layout": "Grid",
+  "rdbmsId": "89a1974d-9c04-4827-ad2c-f55e20e1cbf8",
+  "hidden": false,
+  "insightName": "Show first 500 records from ZIP_INFO",
+  "recipe": "AddPanel(0);Panel(0)|SetPanelView(\"visualization\");CreateFrame(grid).as([FRAME]);Database(\"77a86734-4e2c-4b57-acf3-0820cee7e610\") | SelectTable(ZIP_INFO) | Limit(500) | Import();Frame() | QueryAll() | AutoTaskOptions(panel\u003d[\"0\"], layout\u003d[\"GRID\"]) | Collect(500);",
+  "engineId": "77a86734-4e2c-4b57-acf3-0820cee7e610"
+}
